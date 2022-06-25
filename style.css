@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url(street_light.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 8px;
+  height: auto;
+  max-width: 420px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+h1,
+p {
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 38px;
+  border-bottom: 0.5px inset #333;
+}
+
+#count {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+#increment {
+  background-color: rgb(139, 0, 0);
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#save {
+  background-color: rgb(0, 100, 0);
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#reset {
+  background-color: #333;
+  color: #fff;
+}
+
+#history {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
